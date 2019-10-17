@@ -17,15 +17,15 @@ if (isset($_POST['btn_name'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Questionnaire</title>
 </head>
-<body style="min-height:100vh; background-color:#33E9FF;">
-    <h3 style="padding-top:5%; text-align:center;">Entre ton nom :</h3>
+<body style="min-height:100vh; background-image:url('img/background.png');background-size:cover;">
+    <h3 style="padding-top:5%; text-align:center;color:white;">Entre ton nom :</h3>
     <form action="" method="POST" style="text-align:center;">
         <input type="text" name="name" />
         <button type="submit" name="btn_name">Valider</button>
     </form>
 
 <?php if (isset($erreur)): ?>
-<p style="text-align:center;"><?= $erreur ?></p>
+<p style="text-align:center;color:white;"><?= $erreur ?></p>
 <?php endif ?>
 
 <?php 
@@ -49,26 +49,26 @@ if (!isset($erreur)): ?>
     <?php if (isset($_POST['sage'])): ?>
         <?php $sage = $_POST['sage']; ?>
         <?php if ($sage == 'non'): ?>
-            <p style="text-align:center;">C'est bien ce que je pensais. Voilà ton cadeau :</p>
+            <p style="text-align:center;color:white;">C'est bien ce que je pensais. Voilà ton cadeau :</p>
                 <br>
                 <div style="text-align:center">
                     <img src="img/chien.jpeg" style="width:300px;"/>
                 </div>
-                <h1 style="text-align:center;">Joyeux Noël !</h1>
+                <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php elseif ($sage == 'bof'): ?>
-            <p style="text-align:center;">Mmmouais... J\'apprécie les gens qui disent la vérité. Voilà ton cadeau :</p>
+            <p style="text-align:center;color:white;">Mmmouais... J\'apprécie les gens qui disent la vérité. Voilà ton cadeau :</p>
             <br>
             <div style="text-align:center">
                 <img src="img/candy.png" style="width:300px;"/>
             </div>
-            <h1 style="text-align:center;">Joyeux Noël !</h1>
+            <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php else: ?>
-            <p style="text-align:center;">C\'est bien mais on peut plus se fier à personne de nos jours. Voilà quand même ton cadeau :</p>
+            <p style="text-align:center;color:white;">C\'est bien mais on peut plus se fier à personne de nos jours. Voilà quand même ton cadeau :</p>
             <br>
             <div style="text-align:center">
-                <img src="img/cadeau.png" style="width:300px;"/><br><p>Par contre, y a que la boîte...</p>
+                <img src="img/cadeau.png" style="width:300px;"/><br><p style="color:white;">Par contre, y a que la boîte...</p>
             </div>
-            <h1 style="text-align:center;">Joyeux Noël !</h1>
+            <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php endif ?>
     <?php endif ?>
 <?php endif ?>
