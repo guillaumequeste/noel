@@ -9,15 +9,7 @@ if (isset($_POST['btn_name'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Questionnaire</title>
-</head>
-<body style="min-height:100vh; background-image:url('img/background.png');background-size:cover;">
+<div style="height:85vh; background-image:url('img/background.png');background-size:cover;background-attachment:fixed;background-position:center center;">
     <h3 style="padding-top:5%; text-align:center;color:white;">Entre ton nom :</h3>
     <form action="" method="POST" style="text-align:center;">
         <input type="text" name="name" />
@@ -73,5 +65,4 @@ if (!isset($erreur)): ?>
     <?php endif ?>
 <?php endif ?>
 
-</body>
-</html>
+</div>

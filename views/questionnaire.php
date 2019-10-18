@@ -1,43 +1,37 @@
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jeu</title>
-</head>
-<body style="padding:3%;background-image:url('img/background2.png');background-size:cover;color:white;">
+<div class="pl-5 pr-5" style="min-height:85vh;padding:3%;background-image:url('img/background2.png');background-size:cover;color:white;">
     
-    <h3>1. La fête de Noël commémore la naissance de :</h3>
-    <form action="" method="POST">
-        <label for="commemore"></label>
-        <select name="commemore">
-            <option value="JesusMari">Jésus mon mari !</option>
-            <option value="Jesus">Jésus de Nazareth</option>
-            <option value="Johnny">Johnny Hallyday</option>
-        </select>
-        <button type="submit">Valider</button>    
-    </form>
+    <div class="pt-2 px-5">
+        <h4 id="commemore">1. La fête de Noël commémore la naissance de :</h4>
+        <form action="#commemore" method="POST">
+            <label for="commemore"></label>
+            <select class="custom-select" name="commemore">
+                <option value="JesusMari">Jésus mon mari !</option>
+                <option value="Jesus">Jésus de Nazareth</option>
+                <option value="Johnny">Johnny Hallyday</option>
+            </select>
+            <button class="btn btn-primary mt-2" type="submit">Valider</button>    
+        </form>
 
-        <?php if ($_POST['commemore'] == 'Jesus'): ?>
-            <p>Bravo</p>
-        <?php elseif ($_POST['commemore'] == 'JesusMari'): ?>
-            <p>Euh non...</p>
-        <?php elseif ($_POST['commemore'] == 'Johnny'): ?>
-            <p>Ah que non !</p>
-        <?php endif ?>
+            <?php if ($_POST['commemore'] == 'Jesus'): ?>
+                <p>Bravo</p>
+            <?php elseif ($_POST['commemore'] == 'JesusMari'): ?>
+                <p>Euh non...</p>
+            <?php elseif ($_POST['commemore'] == 'Johnny'): ?>
+                <p>Ah que non !</p>
+            <?php endif ?>
+    </div>
     
 
-    <div class="p-2">
-    <h3>2. Le 26 décembre est férié en France.</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="ferie">2. Le 26 décembre est férié en France.</h4>
+    <form action="#ferie" method="POST">
         <label for="ferie"></label>
-        <select name="ferie">
+        <select class="custom-select" name="ferie">
             <option value="vrai">Vrai</option>
             <option value="faux">Faux</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (isset($_POST['ferie'])): ?>
@@ -45,15 +39,15 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>3. Le substantif Noël est masculin.</h3>
-        <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="substantif">3. Le substantif Noël est masculin.</h4>
+        <form action="#substantif" method="POST">
             <label for="substantif"></label>
-            <select name="substantif">
+            <select class="custom-select" name="substantif">
                 <option value="vrai">Vrai</option>
                 <option value="faux">Faux</option>
             </select>
-            <button type="submit">Valider</button>
+            <button class="btn btn-primary mt-2" type="submit">Valider</button>
         </form>
 
 <?php if (isset($_POST['substantif'])): ?>
@@ -61,15 +55,15 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>4. Pourquoi le Père-Noël est-il rouge ?</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="rouge">4. Pourquoi le Père-Noël est-il rouge ?</h4>
+    <form action="#rouge" method="POST">
         <label for="rouge"></label>
-        <select name="rouge">
+        <select class="custom-select" name="rouge">
             <option value="coca">C'est Coca-Cola qui lui a attribué cette couleur après une campagne de pub dans les années 30.</option>
             <option value="moyenAge">Il portait déjà cette couleur dès le Moyen-Age.</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if ($_POST['rouge'] == 'coca'): ?>
@@ -79,16 +73,16 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>5. La tradition d'un arbre décoré nous vient :</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="arbre">5. La tradition d'un arbre décoré nous vient :</h4>
+    <form action="#arbre" method="POST">
         <label for="arbre"></label>
-        <select name="arbre">
+        <select class="custom-select" name="arbre">
             <option value="romains">Des romains</option>
             <option value="celtes">Des celtes</option>
             <option value="grecs">Des grecs</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['arbre'] == 'romains') || ($_POST['arbre'] == 'grecs')): ?>
@@ -98,11 +92,11 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>6. Laquelle de ces propositions ne signifie pas "Joyeux Noël" ?</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="traduction">6. Laquelle de ces propositions ne signifie pas "Joyeux Noël" ?</h4>
+    <form action="#traduction" method="POST">
         <label for="traduction"></label>
-        <select name="traduction">
+        <select class="custom-select" name="traduction">
             <option value="tahitien">Ia ora'na no te noere (tahitien)</option>
             <option value="normand">Bouon Noué (Normand)</option>
             <option value="russe">С Рождеством (russe)</option>
@@ -110,7 +104,7 @@
             <option value="indonesien">Selamat ulang tahun (indonésien)</option>
             <option value="hongrois">Boldog karácsonyt (hongrois)</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['traduction'] == 'tahitien') || ($_POST['traduction'] == 'normand') || ($_POST['traduction'] == 'russe') || ($_POST['traduction'] == 'néerlandais') || ($_POST['traduction'] == 'hongrois')): ?>
@@ -120,16 +114,16 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>7. Le Noël orthodoxe a lieu le :</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="orthodoxe">7. Le Noël orthodoxe a lieu le :</h4>
+    <form action="#orthodoxe" method="POST">
         <label for="orthodoxe"></label>
-        <select name="orthodoxe">
+        <select class="custom-select" name="orthodoxe">
             <option value="4">4 janvier</option>
             <option value="7">7 janvier</option>
             <option value="10">10 janvier</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['orthodoxe'] == '4') || ($_POST['orthodoxe'] == '10')): ?>
@@ -139,16 +133,16 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>8. Dans le film "Le Père-Noël est une ordure", Thierry Lhermitte dit: "Figurez-vous que Thérèse n'est pas moche. Elle n'a pas un physique..." :</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="film">8. Dans le film "Le Père-Noël est une ordure", Thierry Lhermitte dit: "Figurez-vous que Thérèse n'est pas moche. Elle n'a pas un physique..." :</h4>
+    <form action="#film" method="POST">
         <label for="film"></label>
-        <select name="film">
+        <select class="custom-select" name="film">
             <option value="gracile">gracile</option>
             <option value="facile">facile</option>
             <option value="fascine">qui fascine</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['film'] == 'gracile') || ($_POST['film'] == 'fascine')): ?>
@@ -158,16 +152,16 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>9. En Finlande, la tradition impose d'aller, la veille de Noël : :</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="tradition">9. En Finlande, la tradition impose d'aller, la veille de Noël : :</h4>
+    <form action="#tradition" method="POST">
         <label for="tradition"></label>
-        <select name="tradition">
+        <select class="custom-select" name="tradition">
             <option value="sauna">au sauna</option>
             <option value="peche">à la pêche</option>
             <option value="restaurant">au restaurant</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['tradition'] == 'peche') || ($_POST['tradition'] == 'restaurant')): ?>
@@ -177,15 +171,15 @@
 <?php endif ?>
 </div>
 
-    <div class="p-2">
-    <h3>10. Pour former les flocons de neige, il faut un air pur débarassé de toute poussière:</h3>
-    <form action="" method="POST">
+    <div class="pt-5 px-5">
+    <h4 id="flocon">10. Pour former les flocons de neige, il faut un air pur débarassé de toute poussière:</h4>
+    <form action="#flocon" method="POST">
         <label for="flocon"></label>
-        <select name="flocon">
+        <select class="custom-select" name="flocon">
             <option value="vrai">vrai</option>
             <option value="faux">faux</option>
         </select>
-        <button type="submit">Valider</button>
+        <button class="btn btn-primary mt-2" type="submit">Valider</button>
     </form>
 
 <?php if (($_POST['flocon'] == 'vrai')): ?>
@@ -196,5 +190,4 @@
 </div>
 
 
-</body>
-</html>
+</div>
