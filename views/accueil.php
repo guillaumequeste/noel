@@ -1,1 +1,8 @@
-<h2 class="pt-2 pb-2" style="text-align:center;">Accueil</h2>
+<div class="accueil">
+    <div class="sage">
+        <a href="index.php?page=sage"><div class="circle gelatine"></div></a>
+    </div>
+    <div class="questionnaire">
+        <a href="index.php?page=questionnaire"><div class="circle pulse"></div></a>
+    </div>
+</div>

@@ -27,6 +27,7 @@ $page = $_REQUEST["page"] ?? "home";
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -43,14 +44,14 @@ $page = $_REQUEST["page"] ?? "home";
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php?page=home">Accueil <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link <?php if ($_SERVER['QUERY_STRING'] == 'page=home'){echo 'active';}?>" href="index.php?page=home">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=sage">As-tu été sage ?</a>
+              <a class="nav-link <?php if ($_SERVER['QUERY_STRING'] == 'page=sage'){echo 'active';}?>" href="index.php?page=sage">As-tu été sage ?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=questionnaire">Questionnaire</a>
+              <a class="nav-link <?php if ($_SERVER['QUERY_STRING'] == 'page=questionnaire'){echo 'active';}?>" href="index.php?page=questionnaire">Questionnaire</a>
             </li>
         </ul>
     </div>

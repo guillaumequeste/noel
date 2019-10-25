@@ -153,7 +153,7 @@
 </div>
 
     <div class="pt-5 px-5">
-    <h4 id="tradition">9. En Finlande, la tradition impose d'aller, la veille de Noël : :</h4>
+    <h4 id="tradition">9. En Finlande, la tradition impose d'aller, la veille de Noël :</h4>
     <form action="#tradition" method="POST">
         <label for="tradition"></label>
         <select class="custom-select" name="tradition">
