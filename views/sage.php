@@ -48,17 +48,17 @@ if (!isset($erreur)): ?>
                 </div>
                 <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php elseif ($sage == 'bof'): ?>
-            <p style="text-align:center;color:white;">Mmmouais... J\'apprécie les gens qui disent la vérité. Voilà ton cadeau :</p>
+            <p style="text-align:center;color:white;">Mmmouais... J'apprécie les gens qui disent la vérité. Voilà ton cadeau :</p>
             <br>
             <div style="text-align:center">
                 <img src="img/candy.png" style="width:300px;"/>
             </div>
             <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php else: ?>
-            <p style="text-align:center;color:white;">C\'est bien mais on peut plus se fier à personne de nos jours. Voilà quand même ton cadeau :</p>
+            <p style="text-align:center;color:white;">C'est bien mais on peut plus se fier à personne de nos jours. Voilà quand même ton cadeau :</p>
             <br>
             <div style="text-align:center">
-                <img src="img/cadeau.png" style="width:300px;"/><br><p style="color:white;">Par contre, y a que la boîte...</p>
+                <img src="img/cadeau.png" style="width:250px;"/><br><p style="color:white;">Par contre, y a que la boîte...</p>
             </div>
             <h1 style="text-align:center;color:white;">Joyeux Noël !</h1>
         <?php endif ?>

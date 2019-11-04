@@ -11,6 +11,9 @@ $page = $_REQUEST["page"] ?? "home";
     case 'questionnaire' :
       $fichier = "questionnaire.php";
       break;
+    case 'image' :
+      $fichier = "image.php";
+      break;
   }
 ?>
 
@@ -52,6 +55,9 @@ $page = $_REQUEST["page"] ?? "home";
             </li>
             <li class="nav-item">
               <a class="nav-link <?php if ($_SERVER['QUERY_STRING'] == 'page=questionnaire'){echo 'active';}?>" href="index.php?page=questionnaire">Questionnaire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <?php if ($_SERVER['QUERY_STRING'] == 'page=image'){echo 'active';}?>" href="index.php?page=image">Image</a>
             </li>
         </ul>
     </div>

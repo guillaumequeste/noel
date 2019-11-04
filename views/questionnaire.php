@@ -67,9 +67,9 @@
     </form>
 
 <?php if ($_POST['rouge'] == 'coca'): ?>
-    <p>Non,<br> en fait, le Père-Noël était déjà rouge bien avant que la marque de soda ne s'en empare.<br> Au Moyen-Age, Saint Nicolas, protecteur des enfants, des veuvez et des gens faibles, était représenté vêtu d'une robe carmin.<br> Une couleur qui subsiste lorsque sa légende s’exporte avec les colons aux Etats-Unis, au XIXe siècle, et qu’il devient «Santa Claus». Les illustrateurs américains le représentent alors habillé de rouge et blanc.</p>
+    <p>Non,<br> en fait, le Père-Noël était déjà rouge bien avant que la marque de soda ne s'en empare.<br> Au Moyen-Age, Saint Nicolas, protecteur des enfants, des veuves et des gens faibles, était représenté vêtu d'une robe carmin.<br> Une couleur qui subsiste lorsque sa légende s’exporte avec les colons aux Etats-Unis, au XIXe siècle, et qu’il devient «Santa Claus». Les illustrateurs américains le représentent alors habillé de rouge et blanc.</p>
 <?php elseif ($_POST['rouge'] == 'moyenAge'): ?>
-<p>C'est vrai,<br> le Père-Noël était déjà rouge bien avant que la marque de soda ne s'en empare.<br> Au Moyen-Age, Saint Nicolas, protecteur des enfants, des veuvez et des gens faibles, était représenté vêtu d'une robe carmin.<br> Une couleur qui subsiste lorsque sa légende s’exporte avec les colons aux Etats-Unis, au XIXe siècle, et qu’il devient «Santa Claus». Les illustrateurs américains le représentent alors habillé de rouge et blanc.</p>
+<p>C'est vrai,<br> le Père-Noël était déjà rouge bien avant que la marque de soda ne s'en empare.<br> Au Moyen-Age, Saint Nicolas, protecteur des enfants, des veuves et des gens faibles, était représenté vêtu d'une robe carmin.<br> Une couleur qui subsiste lorsque sa légende s’exporte avec les colons aux Etats-Unis, au XIXe siècle, et qu’il devient «Santa Claus». Les illustrateurs américains le représentent alors habillé de rouge et blanc.</p>
 <?php endif ?>
 </div>
 
