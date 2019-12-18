@@ -5,7 +5,7 @@
     <div class="questionnaire">
         <a href="index.php?page=questionnaire"><div class="circle pulse"></div></a>
     </div>
-    <div class="image">
-        <a href="index.php?page=image"><div class="circle shake"></div></a>
+    <div class="video">
+        <a href="index.php?page=video"><div class="circle shake"></div></a>
     </div>
 </div>

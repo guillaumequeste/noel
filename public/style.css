@@ -58,7 +58,7 @@
     }
 }
 
-.image {
+.video {
     padding: 2% 0 0 5%;
 }
 
@@ -84,4 +84,22 @@
     80% {
         transform: translateX(10px);
     }
+}
+
+.video-page {
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 85vh;
+    margin: 0;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

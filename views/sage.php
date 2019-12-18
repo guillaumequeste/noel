@@ -25,7 +25,7 @@ if (isset($_POST['btn_name'])) {
 if (!isset($erreur)): ?>
     <?php if (isset($_POST['name'])): ?>
         <?php $name = htmlentities($_POST['name']); ?>
-        <p style="text-align:center;">Bonjour <?= $name ?>. As-tu été sage cette année ?</p>
+        <p style="text-align:center;color:white;">Bonjour <?= $name ?>. As-tu été sage cette année ?</p>
         <br>
         <form action="" method="POST" style="text-align:center;">
             <label for="sage"></label>
